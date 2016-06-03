@@ -50,7 +50,9 @@ void MainWindow::fibonacci(int value, bool array[5], bool last[5])
     // Optimize visualization
     for(int i = 4; i >= 0; i--)
     {
-        if(!last[i] && (array[i] = (temp - f[i] >= 0)))
+        if(last[i])
+            array[i] = false;
+        else if(array[i] = (temp - f[i] >= 0))
             temp -= f[i];
     }
     // Regular Fibonacci calculation
