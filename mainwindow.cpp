@@ -1,5 +1,6 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include <QApplication>
+#include <QAction>
 
 #define COLOR_HOUR        "background-color:red;"
 #define COLOR_NONE        "background-color:white;"
